@@ -14,22 +14,28 @@ public class Kiralynok {
         kir.megoldasok();
     }
         public void megoldasok(){
-        
+        feladat4();
+        feladat6();
+        feladat9();
         }
-        private void fealadat4(){
+        private void feladat4(){
          Tabla tabla = new Tabla('#');
       System.out.println("4. feladat: Az üres tábla");
       tabla.megjelenit();
         }
      
-      private void fealadat6(){
+      private void feladat6(){
        System.out.println("6.feladat: A feltöltött tábla");
         tabla.elhelyez(8);
         tabla.megjelenit();
       }
       
-      
+      private void feladat9(){
+          System.out.println("9.feladat: Üres sorok és oszlopok száma:");
+          System.out.println("Oszlopok: " + tabla.uresOszlopokSzama());
+          System.out.println("Oszlopok: " + tabla.uresSorokSzama());
+      }
        
     }
     
-}
+
